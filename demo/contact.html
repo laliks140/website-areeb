@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - AK Machinery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <img
+            src="images/deez_nuts-removebg-preview.png"
+            alt="ShoeMach Logo"
+            class="logo"
+          />
+          <span>AK Machinery</span>
+        </div>
+
+        <!-- Mobile navigation -->
+        <div class="mobile-nav">
+          <a href="index.html" class="mobile-nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="machines.html" class="mobile-nav-item">
+            <i class="fas fa-industry"></i>
+            <span>Machines</span>
+          </a>
+          <a href="contact.html" class="mobile-nav-item active">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <!-- Desktop navigation -->
+        <div class="nav-links">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="index.html#about-section"><i class="fas fa-info-circle"></i> About</a>
+          <a href="machines.html"><i class="fas fa-industry"></i> Machines</a>
+          <a href="index.html#innovation-section"><i class="fas fa-concierge-bell"></i> Services</a>
+          <a href="contact.html" class="contact-btn active"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Get in Touch</h1>
+            <p class="animate-text-delay">Let's discuss how we can revolutionize your shoe manufacturing process</p>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info-card">
+                <div class="info-header">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help and answer any questions you might have</p>
+                </div>
+                
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>123 Industrial Area<br>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>+254 123 456 789<br>+254 987 654 321</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>info@akmachinery.com<br>support@akmachinery.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-header">
+                        <h2>Send us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you shortly</p>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.818399740214!2d36.8213!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNiJTIDM2wrA0OScxNi43IkU!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>
