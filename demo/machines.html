@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Machines - AK Machinery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <img
+            src="images/deez_nuts-removebg-preview.png"
+            alt="ShoeMach Logo"
+            class="logo"
+          />
+          <span>AK Machinery</span>
+        </div>
+
+        <!-- Mobile navigation -->
+        <div class="mobile-nav">
+          <a href="index.html" class="mobile-nav-item">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="machines.html" class="mobile-nav-item active">
+            <i class="fas fa-industry"></i>
+            <span>Machines</span>
+          </a>
+          <a href="#contact" class="mobile-nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+
+        <!-- Desktop navigation -->
+        <div class="nav-links">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+          <a href="machines.html" class="active"><i class="fas fa-industry"></i> Machines</a>
+          <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
+          <a href="#contact" class="contact-btn"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <h1>Industrial Shoe Making Machines</h1>
+        <p>Premium quality machinery for professional shoe manufacturing</p>
+      </div>
+    </header>
+
+    <!-- Product Grid -->
+    <section class="products-section">
+      <div class="container">
+        <!-- Filters -->
+        <div class="filter-bar">
+          <button class="filter-btn active">All Machines</button>
+          <button class="filter-btn">Lasting Machines</button>
+          <button class="filter-btn">Stitching Machines</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Product Card 1 -->
+          <a href="products/th-777ma.html" class="product-card">
+            <div class="product-image">
+              <img src="images/TH-N738B LASTING MACHINE.jpg" alt="TH-777MA" />
+              <span class="product-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>TH-777MA</h3>
+              <p class="product-type">Computer Lasting Machine</p>
+              <div class="product-specs">
+                <span><i class="fas fa-cog"></i> 2000 pairs/day</span>
+                <span><i class="fas fa-bolt"></i> 2.2 kW</span>
+              </div>
+              <div class="product-price">
+                <span>From</span>
+                <strong>$12,500</strong>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product Card 2 -->
+          <a href="products/th-777ma.html" class="product-card">
+            <div class="product-image">
+              <img src="images/TH-N738A LASTING MACHINE.jpg" alt="TH-N737A" />
+            </div>
+            <div class="product-info">
+              <h3>TH-N737A</h3>
+              <p class="product-type">Lasting Machine</p>
+              <div class="product-specs">
+                <span><i class="fas fa-cog"></i> 1500 pairs/day</span>
+                <span><i class="fas fa-bolt"></i> 1.8 kW</span>
+              </div>
+              <div class="product-price">
+                <span>From</span>
+                <strong>$11,800</strong>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product Card 3 -->
+          <a href="products/th-777ma.html" class="product-card">
+            <div class="product-image">
+              <img src="images/TH-777MA LASTING MACHINE.jpg" alt="TH-N737B" />
+              <span class="product-badge">Premium</span>
+            </div>
+            <div class="product-info">
+              <h3>TH-N737B</h3>
+              <p class="product-type">Lasting Machine</p>
+              <div class="product-specs">
+                <span><i class="fas fa-cog"></i> 1200 pairs/day</span>
+                <span><i class="fas fa-bolt"></i> 1.5 kW</span>
+              </div>
+              <div class="product-price">
+                <span>From</span>
+                <strong>$13,200</strong>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+      <div class="container">
+        <h2>Need Expert Advice?</h2>
+        <p>
+          Our team is ready to help you choose the right machinery for your
+          needs
+        </p>
+        <a href="index.html#contact" class="cta-button">Contact Us</a>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

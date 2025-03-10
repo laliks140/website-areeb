@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TH-777MA Computer Lasting Machine - AK Machinery</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <meta name="theme-color" content="#007bff" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <img
+            src="../images/deez_nuts-removebg-preview.png"
+            alt="Logo"
+            class="logo"
+          />
+          <span>AK Machinery</span>
+        </div>
+
+        <!-- Mobile back button -->
+        <div class="mobile-back">
+          <a href="../machines.html">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Machines</span>
+          </a>
+        </div>
+
+        <!-- Desktop navigation -->
+        <div class="nav-links">
+          <a href="../index.html"><i class="fas fa-home"></i>Home</a>
+          <a href="../machines.html" class="active"
+            ><i class="fas fa-industry"></i>Machines</a
+          >
+          <a href="../index.html#contact" class="contact-btn"
+            ><i class="fas fa-envelope"></i>Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Section -->
+    <main class="product-main">
+      <div class="container">
+        <!-- Product Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              src="../images/TH-N738B LASTING MACHINE.jpg"
+              alt="TH-777MA"
+              id="mainImage"
+            />
+          </div>
+          <div class="thumbnail-strip">
+            <img
+              src="../images/TH-N738B LASTING MACHINE.jpg"
+              alt="View 1"
+              class="active"
+            />
+            <img src="../images/TH-N738A LASTING MACHINE.jpg" alt="View 2" />
+            <img src="../images/TH-777MA LASTING MACHINE.jpg" alt="View 3" />
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+          <div class="product-header">
+            <h1>TH-777MA Computer Lasting Machine</h1>
+            <span class="model-badge">Latest Model</span>
+          </div>
+
+          <div class="price-block">
+            <div class="price">
+              <span>Starting from</span>
+              <strong>$12,500</strong>
+            </div>
+            <button class="inquiry-btn">
+              <i class="fas fa-envelope"></i>
+              Request Quote
+            </button>
+          </div>
+
+          <div class="key-features">
+            <h2>Key Features</h2>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> Advanced Computer Control System
+              </li>
+              <li><i class="fas fa-check"></i> High-Precision Operation</li>
+              <li><i class="fas fa-check"></i> Energy-Efficient Design</li>
+              <li><i class="fas fa-check"></i> User-Friendly Interface</li>
+            </ul>
+          </div>
+
+          <div class="tech-specs">
+            <h2>Technical Specifications</h2>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <i class="fas fa-cog"></i>
+                <span>Production Capacity</span>
+                <strong>2000 pairs/day</strong>
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-bolt"></i>
+                <span>Power Consumption</span>
+                <strong>2.2 kW</strong>
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-ruler-combined"></i>
+                <span>Dimensions</span>
+                <strong>1200×800×1600mm</strong>
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-weight-hanging"></i>
+                <span>Weight</span>
+                <strong>880 kg</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Detailed Info Tabs -->
+    <section class="product-details">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="overview">Overview</button>
+          <button class="tab-btn" data-tab="specifications">
+            Specifications
+          </button>
+          <button class="tab-btn" data-tab="applications">Applications</button>
+          <button class="tab-btn" data-tab="support">Support</button>
+        </div>
+
+        <div class="tab-content active" id="overview">
+          <h2>Product Overview</h2>
+          <p>
+            The TH-777MA represents the pinnacle of lasting machine technology,
+            designed for high-volume shoe manufacturing operations. This
+            advanced machine combines precision engineering with user-friendly
+            controls to deliver consistent, high-quality results.
+          </p>
+
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <i class="fas fa-tachometer-alt"></i>
+              <h3>High Efficiency</h3>
+              <p>Process up to 2000 pairs per day with consistent quality</p>
+            </div>
+            <!-- Add more benefit cards -->
+          </div>
+        </div>
+
+        <!-- Add other tab contents -->
+      </div>
+    </section>
+
+    <!-- Mobile CTA -->
+    <div class="mobile-cta">
+      <div class="mobile-price">From $12,500</div>
+      <button class="inquiry-btn">Request Quote</button>
+    </div>
+
+    <script>
+      // Image Gallery
+      document.querySelectorAll(".thumbnail-strip img").forEach((img) => {
+        img.addEventListener("click", function () {
+          document
+            .querySelector(".thumbnail-strip img.active")
+            .classList.remove("active");
+          this.classList.add("active");
+          document.getElementById("mainImage").src = this.src;
+        });
+      });
+
+      // Tabs
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document.querySelector(".tab-btn.active").classList.remove("active");
+          document
+            .querySelector(".tab-content.active")
+            .classList.remove("active");
+          this.classList.add("active");
+          document.getElementById(this.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

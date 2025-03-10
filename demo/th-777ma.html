@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TH-777MA Lasting Machine - ShoeMach</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="product-detail.js" defer></script>
+  </head>
+  <body>
+    <!-- Your navbar here -->
+
+    <div class="product-detail-container">
+      <!-- Product Gallery Section -->
+      <div class="product-gallery">
+        <div class="main-image">
+          <img
+            src="images/th-777ma/main.jpg"
+            alt="TH-777MA Lasting Machine"
+            id="mainImage"
+          />
+          <span class="demo-tag">Demo</span>
+        </div>
+        <div class="thumbnail-container">
+          <img
+            src="images/th-777ma/1.jpg"
+            alt="TH-777MA View 1"
+            class="thumbnail active"
+          />
+          <img
+            src="images/th-777ma/2.jpg"
+            alt="TH-777MA View 2"
+            class="thumbnail"
+          />
+          <img
+            src="images/th-777ma/3.jpg"
+            alt="TH-777MA View 3"
+            class="thumbnail"
+          />
+          <img
+            src="images/th-777ma/4.jpg"
+            alt="TH-777MA View 4"
+            class="thumbnail"
+          />
+        </div>
+      </div>
+
+      <!-- Product Info Section -->
+      <div class="product-info-detailed">
+        <div class="product-header">
+          <h1>TH-777MA Lasting Machine</h1>
+          <div class="product-meta-info">
+            <span class="price-range">$12,500 - $15,000</span>
+            <span class="moq">Minimum Order: 1 Set</span>
+          </div>
+        </div>
+
+        <div class="quick-info">
+          <div class="info-item">
+            <i class="fas fa-box"></i>
+            <span>In Stock</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-certificate"></i>
+            <span>2 Year Warranty</span>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <button class="inquiry-btn">
+            <i class="fas fa-envelope"></i>
+            Send Inquiry
+          </button>
+          <button class="catalog-btn">
+            <i class="fas fa-download"></i>
+            Download Catalog
+          </button>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="description">
+              Description
+            </button>
+            <button class="tab-btn" data-tab="specifications">
+              Specifications
+            </button>
+            <button class="tab-btn" data-tab="shipping">Shipping</button>
+          </div>
+
+          <div class="tab-content">
+            <div class="tab-panel active" id="description">
+              <h3>Product Description</h3>
+              <p>
+                The TH-777MA Lasting Machine is a state-of-the-art computerized
+                toe lasting machine designed for high-precision shoe
+                manufacturing. This advanced equipment offers superior
+                efficiency and consistent quality in toe lasting operations.
+              </p>
+
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Advanced computerized control system</li>
+                <li>High-precision lasting performance</li>
+                <li>User-friendly interface</li>
+                <li>Energy-efficient operation</li>
+                <li>Low maintenance requirements</li>
+              </ul>
+
+              <h4>Applications:</h4>
+              <p>
+                Ideal for sports shoes, casual shoes, and formal footwear
+                manufacturing.
+              </p>
+            </div>
+
+            <div class="tab-panel" id="specifications">
+              <h3>Technical Specifications</h3>
+              <table class="specs-table">
+                <tr>
+                  <td>Model</td>
+                  <td>TH-777MA</td>
+                </tr>
+                <tr>
+                  <td>Power Supply</td>
+                  <td>220V/380V 50/60Hz</td>
+                </tr>
+                <tr>
+                  <td>Power Consumption</td>
+                  <td>2.2 KW</td>
+                </tr>
+                <tr>
+                  <td>Production Capacity</td>
+                  <td>1800-2000 Pairs/8h</td>
+                </tr>
+                <tr>
+                  <td>Machine Size</td>
+                  <td>1200×800×1600mm</td>
+                </tr>
+                <tr>
+                  <td>Machine Weight</td>
+                  <td>680 KG</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-panel" id="shipping">
+              <h3>Shipping Information</h3>
+              <div class="shipping-info">
+                <p><strong>Delivery Time:</strong> 15-20 working days</p>
+                <p>
+                  <strong>Shipping Methods:</strong> Sea freight, Air freight
+                  available
+                </p>
+                <p>
+                  <strong>Package Details:</strong> Wooden case with foam
+                  protection
+                </p>
+                <p><strong>Package Size:</strong> 1400×1000×1800mm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="inquiry-modal" id="inquiryModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Product Inquiry</h2>
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea required></textarea>
+          </div>
+          <button type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
